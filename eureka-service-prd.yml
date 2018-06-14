@@ -12,4 +12,6 @@ eureka:
     lease-expiration-duration-in-seconds: 60
     #租期更新时间间隔，即每15秒发送一次心跳
     lease-renewal-interval-in-seconds: 15
+user:
+  name: xuhaixing01
 
