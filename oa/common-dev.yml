@@ -1,0 +1,9 @@
+eureka:
+  instance:
+    #租期到期时间
+    lease-expiration-duration-in-seconds: 60
+    #租期更新时间间隔，即每15秒发送一次心跳
+    lease-renewal-interval-in-seconds: 15
+  client:
+    service-url:
+      defaultZone: http://${eureka.ins.name}:8761/eureka
