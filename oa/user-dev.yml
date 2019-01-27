@@ -1,0 +1,10 @@
+server:
+  port: 9010
+
+mybatis:
+  mapper-locations: classpath*:mybatis/mapping/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+
+logging:
+  level:
+    root: info
