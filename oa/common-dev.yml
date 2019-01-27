@@ -22,3 +22,16 @@ spring:
     redis:
       repositories:
         enabled: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.94.150:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    #租期到期时间
+    lease-expiration-duration-in-seconds: 60
+    #租期更新时间间隔，即每15秒发送一次心跳
+    lease-renewal-interval-in-seconds: 15
+    instance-id: http://${spring.cloud.client.ip-address}:${server.port}
