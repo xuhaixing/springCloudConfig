@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: user-service
+
 mybatis:
   mapper-locations: classpath*:mybatis/mapping/*.xml
   config-location: classpath:mybatis/mybatis-config.xml
