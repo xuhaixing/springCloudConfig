@@ -3,7 +3,7 @@ spring:
     name: user-service
 
 mybatis:
-  mapper-locations: classpath*:mybatis/mapping/*.xml
+  mapper-locations: classpath*:mybatis/mapper/*.xml, classpath*:mybatis/custom-mapper/*.xml
   config-location: classpath:mybatis/mybatis-config.xml
 
 logging:
